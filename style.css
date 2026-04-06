@@ -1,57 +1,37 @@
-/* Body & Background */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
-    margin: 0;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
 }
 
-/* Main Resume Container */
 .resume-container {
     display: flex;
-    flex-direction: row;
-    max-width: 900px;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Photo Section */
 .photo img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 30px;
-    border: 3px solid #0077b6;
+    margin-right: 20px;
 }
 
-/* Info Section */
 .info h1 {
     margin: 0;
-    color: #023e8a;
+    color: #333;
 }
 
 .info h2 {
-    margin-top: 20px;
-    color: #0077b6;
-    border-bottom: 2px solid #0077b6;
-    padding-bottom: 5px;
-}
-
-.info p, .info ul {
-    color: #333333;
-    line-height: 1.7;
+    margin-top: 15px;
+    color: #555;
 }
 
 .info ul {
     list-style-type: square;
     padding-left: 20px;
-}
-
-/* Hover Effects (Optional) */
-.info p:hover {
-    color: #0077b6;
 }
