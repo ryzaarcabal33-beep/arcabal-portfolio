@@ -1,51 +1,57 @@
+/* Body & Background */
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
-.container {
-    width: 700px;
-    margin: 30px auto;
-    background: white;
-    padding: 25px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Main Resume Container */
+.resume-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Header */
-.header {
-    text-align: center;
-    border-bottom: 2px solid #333;
-    padding-bottom: 15px;
-}
-
-.profile {
-    width: 120px;
-    height: 120px;
-    border-radius: 5px;
+/* Photo Section */
+.photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #0077b6;
 }
 
-.header h1 {
-    margin: 10px 0 5px;
+/* Info Section */
+.info h1 {
+    margin: 0;
+    color: #023e8a;
 }
 
-.header p {
-    margin: 3px;
-}
-
-/* Sections */
-.section {
+.info h2 {
     margin-top: 20px;
-}
-
-.section h2 {
-    border-bottom: 1px solid #ccc;
+    color: #0077b6;
+    border-bottom: 2px solid #0077b6;
     padding-bottom: 5px;
-    color: #333;
 }
 
-ul {
+.info p, .info ul {
+    color: #333333;
+    line-height: 1.7;
+}
+
+.info ul {
+    list-style-type: square;
     padding-left: 20px;
+}
+
+/* Hover Effects (Optional) */
+.info p:hover {
+    color: #0077b6;
 }
