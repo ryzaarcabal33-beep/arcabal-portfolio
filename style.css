@@ -6,52 +6,84 @@ body {
     padding: 20px;
 }
 
-/* Main Resume Container */
-.resume-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 900px;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+/* Layout */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #4b6cb7, #182848);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 
-/* Photo Section */
-.photo img {
-    width: 150px;
-    height: 150px;
+.sidebar .profile {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 30px;
-    border: 3px solid #0077b6;
+    border: 4px solid white;
+    margin-bottom: 10px;
 }
 
-/* Info Section */
-.info h1 {
-    margin: 0;
+.sidebar h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.05);
+}
+
+.content {
+    margin-left: 270px;
+    padding: 30px;
+}
+
+.header {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
     color: #023e8a;
+    margin-top: 0;
 }
 
-.info h2 {
-    margin-top: 20px;
-    color: #0077b6;
-    border-bottom: 2px solid #0077b6;
-    padding-bottom: 5px;
-}
-
-.info p, .info ul {
-    color: #333333;
-    line-height: 1.7;
-}
-
-.info ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-/* Hover Effects (Optional) */
-.info p:hover {
-    color: #0077b6;
+.skills span {
+    display: inline-block;
+    background: #4b6cb7;
+    color: white;
+    padding: 5px 12px;
+    margin: 5px;
+    border-radius: 14px;
+    font-size: 14px;
 }
